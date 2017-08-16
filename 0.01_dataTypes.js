@@ -36,5 +36,19 @@ console.log(2-5); //-3
 console.log(2*5); //10
 console.log(5/2); //2.5
 console.log(10%3); //1
+
+
+
 //booLeans
 
+/*
+	Conditional Operators (returns true or false)
+	< 	less than
+	>	greater than
+	<=  less than or equal
+	>=  greater than or equal
+	==  equal to
+	=== strictly equal to
+	!   not
+	!=  not equal to
+*/
