@@ -15,3 +15,5 @@ let foodArr = ['quesadilla', 'pecan pie','potato', 'cheesecake', 'shrimp pasta']
 foodArr.forEach(function(i) {
 	console.log(i)
 })
+//the function in .forEach is a callback function
+//has parameters (values, index, array)

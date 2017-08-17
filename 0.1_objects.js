@@ -20,7 +20,3 @@ console.log(Object.keys(vernon).length);
 for (let i in vernon) {
 	console.log(vernon[i]);
 }
-//DOES NOT WORK. FIGURE OUT WHY
-// for (let i = 0; i < Object.keys(vernon).length; i++){
-// 	console.
-// }
