@@ -1,6 +1,13 @@
 $(function(){
 	// searchBar
+		$('#searchRes').on('keypress', function(e){
+			if (e.which == 13){
+				$('#searchName').click();
+			}
+		})
 		$('#searchName').on('click', function(){
+			$('#searchResults').text("")
+			$('#filmResults').text("")
 			let search = $('#searchRes').val();
 			$.ajax({
 				type: 'GET',
@@ -17,11 +24,12 @@ $(function(){
 						type:'GET',
 						url: characterFilms,
 					}).done(function(films){
-						console.log(films.title)
+						// console.log(films.title)
 						$('#filmResults').append
 						('<li>' + films.title + '</li>')
 					})
 				})
+
 			})
 		})
 	// tableOne
