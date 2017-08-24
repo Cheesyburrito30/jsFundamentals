@@ -10,30 +10,94 @@
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
+		<!-- navbar -->
+			<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <!-- <span class="icon-bar"></span> -->
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Star Wars</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+			</nav>
+
 		<div class="container">
-			<div class="row col-md-6" >
-				<table class="table table-striped table-bordered" >
-					<thead>
-						<tr>
-							<th>Planet</th>
-						</tr>
-					</thead>
-					<tbody id="planetTable">
-					
-					</tbody>
-				</table>
-			</div>
-			<div class="row col-md-6" >
-				<table class="table table-striped table-bordered" >
-					<thead>
-						<tr>
-							<th>Ship</th>
-						</tr>
-					</thead>
-					<tbody id="shipTable">
+		<!-- searchBar -->
+			<div class="row">
+				<div class="col-md-12 box">
+						<div class="input-group">
 						
-					</tbody>
-				</table>
+							<input type="text" class="form-control" placeholder="Enter Name Here" id="searchRes">
+							<span class="input-group-btn">
+								<button 
+								class="btn btn-primary"
+								id='searchName'>Submit</button>
+							</span>
+						
+						</div>
+						<hr>
+						<div class="well">
+							<ul>
+								<div>
+									<p id="searchResults"></p>
+									<ul id="filmResults">
+										
+									</ul>
+								</div>
+							</ul>
+						</div>	
+				</div>
+			</div>
+		<!-- tableRow -->
+			<div class="row">
+			<!-- table1 -->
+				<div class="col-md-6" >
+					<table class="table table-striped table-bordered" >
+						<thead>
+							<tr>
+								<th>Planet</th>
+							</tr>
+						</thead>
+						<tbody id="planetTable">
+						
+						</tbody>
+					</table>
+				</div>
+			<!-- table2 -->
+				<div class="col-md-6">
+					<table class="table table-striped table-bordered" >
+						<thead>
+							<tr>
+								<th>Ship</th>
+							</tr>
+						</thead>
+						<tbody id="shipTable">
+							
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="main.js"></script>
